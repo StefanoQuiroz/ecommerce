@@ -4,6 +4,9 @@ GET http://localhost:8000/api/products
 ###GET PRODUCT
 GET http://localhost:8000/api/product/613050f55eaf17cbcdcbb526
 
+###GET RANDOM PRODUCT
+GET http://localhost:8000/api/products/random
+
 ###CREATE PRODUCTS
 POST http://localhost:8000/api/product/create
 Content-Type: application/json

@@ -1,0 +1,32 @@
+###GET PRODUCTS
+GET http://localhost:8000/api/products
+
+###GET PRODUCT
+GET http://localhost:8000/api/product/613050f55eaf17cbcdcbb526
+
+###CREATE PRODUCTS
+POST http://localhost:8000/api/product/create
+Content-Type: application/json
+
+{
+    "image": "https://andinosac.com/sites/default/files/styles/thumb/public/ik-zero-410.png?itok=xxLr5WEt",
+    "title" : "Inca Kola Zero",
+    "description" : "Es la marca que mantiene las credenciales de peruanidad de Inca Kola pero con zero calorías. Creativa, moderna y con un sabor delicioso.",
+    "price"  : 7.99,
+    "stock" : 150 
+}
+
+###EDIT PRODUCTS
+PUT http://localhost:8000/api/product/update/613050f55eaf17cbcdcbb526
+Content-Type: application/json
+
+{
+    "image": "https://andinosac.com/sites/default/files/styles/thumb/public/ik-zero-410.png?itok=xxLr5WEt",
+    "title" : "Inca Kola Zero",
+    "description" : "Es la marca que mantiene las credenciales de peruanidad de Inca Kola pero con zero calorías. Creativa, moderna y con un sabor delicioso.",
+    "price"  : 7.99,
+    "stock" : 150 
+}
+
+###GET PRODUCTS
+DELETE http://localhost:8000/api/product/delete/613050a8484ccad7a2d85937

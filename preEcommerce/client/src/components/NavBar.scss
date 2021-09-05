@@ -1,0 +1,81 @@
+.navbar{
+    width: 100%;
+    background-color: #111;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    padding: 1.5rem 1rem;
+    justify-content: space-between;
+    align-items: center;
+    h1{
+        color: #fff;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+}
+
+.navbar--links{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    li{
+        margin-right: 1.2rem;
+        a{
+            color: #fff;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            .cart--icon{
+                margin: 0 0.3rem;
+            }
+            span{
+                margin: 0 0.5rem;
+            }
+        }
+    }
+    .cart{
+        background-color: #333;
+        padding: 0.4rem;
+        border-radius: 8px;
+    }
+    .cart:hover{
+        background-color: rgb(122, 199, 7);
+        color: #fff;
+    }
+    .cart--counter{
+        background-color: #fff;
+        border-radius: 50%;
+        height: 1.2rem;
+        width: 1.2rem;
+        color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+    }
+}
+
+.hamburguer--menu{
+    width: 1.8rem;
+    height: 1.8rem;
+    display: flex;
+    flex-direction: column; //arriba hacia abajo si fuera row de izq a der
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    div{
+        width: 100%;
+        background-color: #fff;
+        height: 3px;
+    }
+    &:hover > div{
+        background-color: rgb(122, 199, 7);
+    }
+}
+
+//media queries
+
+
+
+

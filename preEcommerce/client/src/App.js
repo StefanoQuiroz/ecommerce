@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.scss';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Home from './views/Home';
@@ -8,11 +8,12 @@ import BackDrop from './components/BackDrop';
 import SideDrawer from './components/SideDrawer';
 
 function App() {
+  const [sideToogle, setSideToogle] = useState(false);
   return (
     <div className="app">
       <Router>
-        <BackDrop/>
-        <SideDrawer/>
+        <BackDrop sideToogle={sideToogle}/>
+        <SideDrawer sideToogle={sideToogle} />
         <Switch>
           <Route exact path={`/`}>
             <Home/>

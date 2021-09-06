@@ -1,4 +1,4 @@
-.sidedrawer{
+.sideDrawer{
     width: 75%;
     height: 100vh;
     background-color: #fff;
@@ -6,4 +6,10 @@
     top: 0;
     left: 0;
     z-index: 100;
+    transform: translateX(-100%);
+    transition: all 0.3s ease-out;
+}
+
+.sideDrawer .sideToogle{
+    transform: translateX(0);
 }

@@ -1,10 +1,9 @@
 import './backDrop.scss';
 
-const BackDrop = () => {
+const BackDrop = (props) => {
+    const {sideToogle} = props
     return (
-        <div className="backdrop">
-            
-        </div>
+        sideToogle && <div className="backdrop"></div>
     );
 }
 

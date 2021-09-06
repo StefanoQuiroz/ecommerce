@@ -1,5 +1,6 @@
 .navbar{
     width: 100%;
+    height: 6rem;
     background-color: #111;
     color: #fff;
     display: flex;
@@ -11,6 +12,9 @@
         color: #fff;
         font-size: 1.5rem;
         cursor: pointer;
+    }
+    &:hover h1{
+        color: rgb(122, 199, 7);
     }
 }
 
@@ -51,7 +55,7 @@
         color: #000;
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: flex-end;
         font-size: 1rem;
     }
 }
@@ -59,7 +63,7 @@
 .hamburguer--menu{
     width: 1.8rem;
     height: 1.8rem;
-    display: flex;
+    display: none;
     flex-direction: column; //arriba hacia abajo si fuera row de izq a der
     justify-content: space-between;
     align-items: center;
@@ -75,7 +79,20 @@
 }
 
 //media queries
+@media (max-width: 960px) {
+    .navbar--links{
+        display: none;
+    }
+    .hamburguer--menu{
+        display: flex;
+    }
+}
 
+@media (max-width: 500px) {
+    .navbar h1{
+        font-size: 1.1rem;
+    }
+}
 
 
 
